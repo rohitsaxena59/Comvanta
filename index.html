@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comvanta - AI & E-commerce Integration Specialists</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom colors and Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172a', // Slate-900 equivalent
+                        'secondary-dark': '#1e293b', // Slate-800 equivalent
+                        'accent-cyan': '#22d3ee', // Cyan-400
+                        'accent-hover': '#06b6d4', // Cyan-600
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Using Inter font, which Tailwind loads implicitly if available */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-primary-dark text-gray-200">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-primary-dark border-b border-secondary-dark/50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Company Name -->
+                <a href="#home" class="text-3xl font-extrabold tracking-tight text-white transition duration-300 hover:text-accent-cyan">
+                    Com<span class="text-accent-cyan">vanta</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-lg font-medium text-gray-300 hover:text-accent-cyan transition duration-300">Services</a>
+                    <a href="#expertise" class="text-lg font-medium text-gray-300 hover:text-accent-cyan transition duration-300">Expertise</a>
+                    <a href="#contact" class="text-lg font-medium text-gray-300 hover:text-accent-cyan transition duration-300">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button (Hamburger) - Not functional for single page, but good practice -->
+                <div class="md:hidden">
+                    <button class="text-gray-400 hover:text-white focus:outline-none">
+                        <!-- Lucide Menu Icon -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="py-24 md:py-36 bg-secondary-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <span class="inline-block text-sm font-semibold uppercase tracking-widest text-accent-cyan mb-4 rounded-full bg-accent-cyan/10 px-4 py-1.5">
+                        Future-Ready E-commerce
+                    </span>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight text-white mb-6">
+                        Seamlessly Integrate <span class="text-accent-cyan">AI Power</span> into Your Commerce Ecosystem
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                        Comvanta delivers bespoke, high-performance digital commerce solutions, leveraging **Microservices** and deep **Commerce** expertise to drive intelligent growth.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-lg font-bold rounded-full text-primary-dark bg-accent-cyan hover:bg-accent-hover shadow-xl transition duration-300 transform hover:scale-105">
+                        Start Your Project Today
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Core Services Section -->
+        <section id="services" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-white mb-4">
+                    Our Core Integration Services
+                </h2>
+                <p class="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+                    We bridge the gap between legacy systems, modern architecture, and advanced intelligence to create resilient digital platforms.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- Service Card 1: AI Integration -->
+                    <div class="bg-secondary-dark p-8 rounded-xl shadow-2xl border border-accent-cyan/20 transform hover:scale-[1.02] transition duration-300">
+                        <!-- Lucide CPU Icon -->
+                        <svg class="w-12 h-12 text-accent-cyan mb-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M12 1v3"/><path d="M12 20v3"/><path d="M20 12h3"/><path d="M1 12h3"/><path d="M17 17v-1"/><path d="M17 7v-1"/><path d="M7 7v-1"/><path d="M7 17v-1"/></svg>
+                        <h3 class="text-2xl font-bold text-white mb-3">AI & ML Integration</h3>
+                        <p class="text-gray-400">
+                            Seamlessly embed AI capabilities—from personalized recommendations and intelligent search to automated inventory—directly into your e-commerce platform.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2: E-commerce Solutions (SAP Commerce) -->
+                    <div class="bg-secondary-dark p-8 rounded-xl shadow-2xl border border-accent-cyan/20 transform hover:scale-[1.02] transition duration-300">
+                        <!-- Lucide Shopping Cart Icon -->
+                        <svg class="w-12 h-12 text-accent-cyan mb-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.72a2 2 0 0 0 2-1.58L23 6H6"/></svg>
+                        <h3 class="text-2xl font-bold text-white mb-3">Enterprise Commerce</h3>
+                        <p class="text-gray-400">
+                            Full-lifecycle Commerce implementation, migration, and optimization. We ensure robust, scalable, and secure transactional experiences.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3: Microservices Architecture -->
+                    <div class="bg-secondary-dark p-8 rounded-xl shadow-2xl border border-accent-cyan/20 transform hover:scale-[1.02] transition duration-300">
+                        <!-- Lucide Layers Icon -->
+                        <svg class="w-12 h-12 text-accent-cyan mb-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1.5l9 5-9 5-9-5z"/><path d="M3 13.5l9 5 9-5"/><path d="M3 17.5l9 5 9-5"/></svg>
+                        <h3 class="text-2xl font-bold text-white mb-3">Decoupled Microservices</h3>
+                        <p class="text-gray-400">
+                            Future-proofing your platform with headless, API-first architecture. Achieve unparalleled agility, speed, and independent deployment cycles.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Expertise / Proven Success Section -->
+        <section id="expertise" class="py-20 md:py-32 bg-secondary-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <!-- Lucide Check Circle Icon -->
+                        <svg class="w-16 h-16 text-accent-cyan mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                        <h2 class="text-4xl font-bold text-white mb-4">
+                            Proven Expertise in Critical Technologies
+                        </h2>
+                        <p class="text-lg text-gray-400 mb-8">
+                            Our team has a deep, verifiable track record of delivering successful, large-scale projects, ensuring your investment translates directly into competitive advantage.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <span class="flex-shrink-0 pt-1 text-accent-cyan font-extrabold text-2xl">01</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white">SAP Commerce Cloud Mastery</h4>
+                                    <p class="text-gray-400">We specialize in customizing and integrating SAP Commerce to meet complex B2B and B2C requirements, ensuring peak performance and scalability.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <span class="flex-shrink-0 pt-1 text-accent-cyan font-extrabold text-2xl">02</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white">Advanced Microservices & API Design</h4>
+                                    <p class="text-gray-400">Building resilient, modern platforms using domain-driven design and cutting-edge DevOps practices for continuous innovation.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <span class="flex-shrink-0 pt-1 text-accent-cyan font-extrabold text-2xl">03</span>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-white">Intelligent Data Synchronization</h4>
+                                    <p class="text-gray-400">Ensuring real-time, bidirectional data flow between your core commerce platform and AI/ML models for operational efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:order-1 flex justify-center lg:justify-start">
+                        <!-- Placeholder Image (Using a code/data visualization concept) -->
+                        <div class="bg-primary-dark p-8 rounded-2xl shadow-2xl border-2 border-accent-cyan/50 w-full max-w-lg aspect-square flex flex-col justify-center items-center">
+                            <svg class="w-3/4 h-3/4 text-accent-cyan/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Code and Data Flow Visualization -->
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                <rect x="3" y="10" width="6" height="4" rx="1" ry="1" class="fill-secondary-dark stroke-accent-cyan/50"/>
+                                <rect x="15" y="10" width="6" height="4" rx="1" ry="1" class="fill-secondary-dark stroke-accent-cyan/50"/>
+                                <circle cx="12" cy="12" r="2" class="fill-accent-cyan/50 stroke-accent-cyan"/>
+                                <text x="12" y="13" font-size="2" text-anchor="middle" fill="#fff" font-family="sans-serif">AI</text>
+                            </svg>
+                            <p class="mt-4 text-sm text-gray-500 italic">Conceptual diagram: Microservices & AI Data Flow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Contact/CTA Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-secondary-dark p-10 md:p-16 rounded-3xl shadow-2xl">
+                <h2 class="text-4xl font-bold text-white mb-4">
+                    Ready to Transform Your Commerce Platform?
+                </h2>
+                <p class="text-xl text-gray-400 mb-8">
+                    Let's discuss how Comvanta can utilize AI and our deep commerce expertise to build your next generation e-commerce solution.
+                </p>
+                <a href="mailto:info@rs-consultancyservices.com" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-xl font-bold rounded-full text-primary-dark bg-accent-cyan hover:bg-accent-hover shadow-2xl transition duration-300 transform hover:scale-105">
+                    Contact Our Team
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-secondary-dark/50 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-gray-400 text-base mb-4 md:mb-0">
+                &copy; 2024 Comvanta (a unit of RS Consultancy Services). All rights reserved. Specializing in AI & Enterprise Commerce.
+            </p>
+            <div class="flex justify-center md:justify-end space-x-6">
+                <!-- Simple place holders for potential social links -->
+                <a href="#" class="text-gray-400 hover:text-accent-cyan transition duration-300">Privacy</a>
+                <a href="#" class="text-gray-400 hover:text-accent-cyan transition duration-300">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
